@@ -1,0 +1,13 @@
+using System;
+namespace studyProject
+{
+	class programm
+	{
+		static void Main(string[] args)
+		{
+			double coast = Convert.ToDouble(Console.ReadLine());
+			coast = coast > 500 && coast <= 1000 ? coast * 0.97f : coast > 1000 ? coast * 0.95f : coast;
+			Console.WriteLine(coast);
+		}
+	}
+}
